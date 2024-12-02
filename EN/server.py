@@ -3,7 +3,7 @@ import threading
 from conf import host, port
 from time import strftime
 
-# Конфигурация сервера
+
 host = host
 port = port
 
@@ -14,12 +14,12 @@ server.listen()
 clients = []
 nicknames = []
 
-# Функция для рассылки сообщений всем клиентам
+
 def broadcast(message):
     for client in clients:
         client.send(message)
 
-# Функция для обработки сообщений от клиента
+
 def handle_client(client):
     while True:
         try:
@@ -34,7 +34,7 @@ def handle_client(client):
             nicknames.remove(nickname)
             break
 
-# Функция для принятия новых подключений
+
 def receive():
     while True:
         client, address = server.accept()
