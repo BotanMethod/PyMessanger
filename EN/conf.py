@@ -1,2 +1,2 @@
-host = '192.168.1.111'
-port = 5555
+host = 'YOUR IP HERE' # Do not use "int"
+port = YOUR PORT HERE # Do not use "str"
